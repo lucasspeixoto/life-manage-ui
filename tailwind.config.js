@@ -9,7 +9,6 @@ module.exports = {
       fontFamily: {
         sans: ['"Nunito"', ...defaultTheme.fontFamily.sans],
         serif: ['Open Sans', ...defaultTheme.fontFamily.serif],
-        
       },
       colors: {
         background: 'var(--app-background)',
@@ -180,6 +179,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/container-queries'),
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
   ],
 };

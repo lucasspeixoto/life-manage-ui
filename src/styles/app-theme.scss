@@ -251,7 +251,10 @@ $life-dark-theme: mat.define-theme(
     )};
   --app-error: #{mat.get-theme-color($life-light-theme, error)};
   --app-on-error: #{mat.get-theme-color($life-light-theme, on-error)};
-  --app-error-container: #{mat.get-theme-color($life-light-theme, error-container)};
+  --app-error-container: #{mat.get-theme-color(
+      $life-light-theme,
+      error-container
+    )};
   --app-on-error-container: #{mat.get-theme-color(
       $life-light-theme,
       on-error-container
@@ -286,13 +289,22 @@ $life-dark-theme: mat.define-theme(
       on-surface-variant
     )};
   --app-outline: #{mat.get-theme-color($life-light-theme, outline)};
-  --app-outline-variant: #{mat.get-theme-color($life-light-theme, outline-variant)};
-  --app-inverse-surface: #{mat.get-theme-color($life-light-theme, inverse-surface)};
+  --app-outline-variant: #{mat.get-theme-color(
+      $life-light-theme,
+      outline-variant
+    )};
+  --app-inverse-surface: #{mat.get-theme-color(
+      $life-light-theme,
+      inverse-surface
+    )};
   --app-inverse-on-surface: #{mat.get-theme-color(
       $life-light-theme,
       inverse-on-surface
     )};
-  --app-inverse-primary: #{mat.get-theme-color($life-light-theme, inverse-primary)};
+  --app-inverse-primary: #{mat.get-theme-color(
+      $life-light-theme,
+      inverse-primary
+    )};
   --app-scrim: #{mat.get-theme-color($life-light-theme, scrim)};
   --app-shadow: #{mat.get-theme-color($life-light-theme, shadow)};
   --mat-table-background-color: var(--app-background);
@@ -535,7 +547,10 @@ html.dark {
     )};
   --app-error: #{mat.get-theme-color($life-dark-theme, error)};
   --app-on-error: #{mat.get-theme-color($life-dark-theme, on-error)};
-  --app-error-container: #{mat.get-theme-color($life-dark-theme, error-container)};
+  --app-error-container: #{mat.get-theme-color(
+      $life-dark-theme,
+      error-container
+    )};
   --app-on-error-container: #{mat.get-theme-color(
       $life-dark-theme,
       on-error-container
@@ -569,13 +584,22 @@ html.dark {
       on-surface-variant
     )};
   --app-outline: #{mat.get-theme-color($life-dark-theme, outline)};
-  --app-outline-variant: #{mat.get-theme-color($life-dark-theme, outline-variant)};
-  --app-inverse-surface: #{mat.get-theme-color($life-dark-theme, inverse-surface)};
+  --app-outline-variant: #{mat.get-theme-color(
+      $life-dark-theme,
+      outline-variant
+    )};
+  --app-inverse-surface: #{mat.get-theme-color(
+      $life-dark-theme,
+      inverse-surface
+    )};
   --app-inverse-on-surface: #{mat.get-theme-color(
       $life-dark-theme,
       inverse-on-surface
     )};
-  --app-inverse-primary: #{mat.get-theme-color($life-dark-theme, inverse-primary)};
+  --app-inverse-primary: #{mat.get-theme-color(
+      $life-dark-theme,
+      inverse-primary
+    )};
   --app-scrim: #{mat.get-theme-color($life-dark-theme, scrim)};
   --app-shadow: #{mat.get-theme-color($life-dark-theme, shadow)};
   --mat-table-background-color: var(--app-background);
