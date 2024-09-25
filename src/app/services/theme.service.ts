@@ -37,7 +37,7 @@ export class ThemeService {
   };
 
   public toggleColorTheme() {
-    const colorTheme = this.isThemeDark() ? 'light': 'dark'
+    const colorTheme = this.isThemeDark() ? 'light' : 'dark';
     this.changeColorThemeHandler(colorTheme);
   }
 
