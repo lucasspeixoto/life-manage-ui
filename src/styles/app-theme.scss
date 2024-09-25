@@ -1,3 +1,4 @@
+@use 'sass:map';
 @use '@angular/material' as mat;
 
 @include mat.core();
@@ -26,7 +27,6 @@ $life-dark-theme: mat.define-theme(
   --app-background: #fff;
   --app-on-background: #{mat.get-theme-color($life-light-theme, neutral, 20)};
   --app-inverse: #{mat.get-theme-color($life-light-theme, neutral, 50)};
-
   --app-neutral: #{mat.get-theme-color($life-light-theme, neutral, 60)};
   --app-neutral-0: #{mat.get-theme-color($life-light-theme, neutral, 100)};
   --app-neutral-50: #{mat.get-theme-color($life-light-theme, neutral, 99)};
@@ -43,7 +43,6 @@ $life-dark-theme: mat.define-theme(
   --app-neutral-900: #{mat.get-theme-color($life-light-theme, neutral, 25)};
   --app-neutral-950: #{mat.get-theme-color($life-light-theme, neutral, 20)};
   --app-neutral-1000: #{mat.get-theme-color($life-light-theme, neutral, 10)};
-
   --app-neutral-variant: #{mat.get-theme-color(
       $life-light-theme,
       neutral-variant,
@@ -124,8 +123,6 @@ $life-dark-theme: mat.define-theme(
       neutral-variant,
       10
     )};
-
-  // primary color
   --app-primary-0: #{mat.get-theme-color($life-light-theme, primary, 100)};
   --app-primary-50: #{mat.get-theme-color($life-light-theme, primary, 99)};
   --app-primary-100: #{mat.get-theme-color($life-light-theme, primary, 98)};
@@ -141,7 +138,6 @@ $life-dark-theme: mat.define-theme(
   --app-primary-900: #{mat.get-theme-color($life-light-theme, primary, 25)};
   --app-primary-950: #{mat.get-theme-color($life-light-theme, primary, 20)};
   --app-primary-1000: #{mat.get-theme-color($life-light-theme, primary, 10)};
-
   --app-secondary-0: #{mat.get-theme-color($life-light-theme, secondary, 100)};
   --app-secondary-50: #{mat.get-theme-color($life-light-theme, secondary, 99)};
   --app-secondary-100: #{mat.get-theme-color($life-light-theme, secondary, 98)};
@@ -157,8 +153,6 @@ $life-dark-theme: mat.define-theme(
   --app-secondary-900: #{mat.get-theme-color($life-light-theme, secondary, 25)};
   --app-secondary-950: #{mat.get-theme-color($life-light-theme, secondary, 20)};
   --app-secondary-1000: #{mat.get-theme-color($life-light-theme, secondary, 10)};
-
-  // tertiary color
   --app-tertiary-0: #{mat.get-theme-color($life-light-theme, tertiary, 100)};
   --app-tertiary-50: #{mat.get-theme-color($life-light-theme, tertiary, 99)};
   --app-tertiary-100: #{mat.get-theme-color($life-light-theme, tertiary, 98)};
@@ -174,7 +168,6 @@ $life-dark-theme: mat.define-theme(
   --app-tertiary-900: #{mat.get-theme-color($life-light-theme, tertiary, 25)};
   --app-tertiary-950: #{mat.get-theme-color($life-light-theme, tertiary, 20)};
   --app-tertiary-1000: #{mat.get-theme-color($life-light-theme, tertiary, 10)};
-
   --app-error-0: #{mat.get-theme-color($life-light-theme, error, 100)};
   --app-error-50: #{mat.get-theme-color($life-light-theme, error, 99)};
   --app-error-100: #{mat.get-theme-color($life-light-theme, error, 98)};
@@ -190,7 +183,6 @@ $life-dark-theme: mat.define-theme(
   --app-error-900: #{mat.get-theme-color($life-light-theme, error, 25)};
   --app-error-950: #{mat.get-theme-color($life-light-theme, error, 20)};
   --app-error-1000: #{mat.get-theme-color($life-light-theme, error, 10)};
-
   --app-primary: #{mat.get-theme-color($life-light-theme, primary)};
   --app-on-primary: #{mat.get-theme-color($life-light-theme, on-primary)};
   --app-primary-container: #{mat.get-theme-color(
@@ -213,7 +205,6 @@ $life-dark-theme: mat.define-theme(
       $life-light-theme,
       on-primary-fixed-variant
     )};
-
   --app-secondary: #{mat.get-theme-color($life-light-theme, secondary)};
   --app-on-secondary: #{mat.get-theme-color($life-light-theme, on-secondary)};
   --app-secondary-container: #{mat.get-theme-color(
@@ -236,7 +227,6 @@ $life-dark-theme: mat.define-theme(
       $life-light-theme,
       on-secondary-fixed-variant
     )};
-
   --app-tertiary: #{mat.get-theme-color($life-light-theme, tertiary)};
   --app-on-tertiary: #{mat.get-theme-color($life-light-theme, on-tertiary)};
   --app-tertiary-container: #{mat.get-theme-color(
@@ -259,7 +249,6 @@ $life-dark-theme: mat.define-theme(
       $life-light-theme,
       on-tertiary-fixed-variant
     )};
-
   --app-error: #{mat.get-theme-color($life-light-theme, error)};
   --app-on-error: #{mat.get-theme-color($life-light-theme, on-error)};
   --app-error-container: #{mat.get-theme-color($life-light-theme, error-container)};
@@ -296,28 +285,21 @@ $life-dark-theme: mat.define-theme(
       $life-light-theme,
       on-surface-variant
     )};
-
   --app-outline: #{mat.get-theme-color($life-light-theme, outline)};
   --app-outline-variant: #{mat.get-theme-color($life-light-theme, outline-variant)};
-
   --app-inverse-surface: #{mat.get-theme-color($life-light-theme, inverse-surface)};
   --app-inverse-on-surface: #{mat.get-theme-color(
       $life-light-theme,
       inverse-on-surface
     )};
   --app-inverse-primary: #{mat.get-theme-color($life-light-theme, inverse-primary)};
-
   --app-scrim: #{mat.get-theme-color($life-light-theme, scrim)};
   --app-shadow: #{mat.get-theme-color($life-light-theme, shadow)};
-
   --mat-table-background-color: var(--app-background);
   --mat-table-row-item-outline-color: theme('borderColor.DEFAULT');
   --mat-paginator-container-background-color: none;
-
   --app-transition-transform: transform 0.15s linear;
   --mdc-protected-button-container-height: 2.375rem;
-  --mat-menu-item-label-text-size: theme('fontSize.tiny');
-  --mat-option-label-text-size: theme('fontSize.tiny');
 }
 
 html {
@@ -335,7 +317,6 @@ html.dark {
   --app-background: #{mat.get-theme-color($life-dark-theme, neutral, 20)};
   --app-on-background: #fff;
   --app-inverse: #{mat.get-theme-color($life-dark-theme, neutral, 50)};
-
   --app-neutral-0: #{mat.get-theme-color($life-dark-theme, neutral, 100)};
   --app-neutral-50: #{mat.get-theme-color($life-dark-theme, neutral, 99)};
   --app-neutral-100: #{mat.get-theme-color($life-dark-theme, neutral, 98)};
@@ -351,7 +332,6 @@ html.dark {
   --app-neutral-900: #{mat.get-theme-color($life-dark-theme, neutral, 25)};
   --app-neutral-950: #{mat.get-theme-color($life-dark-theme, neutral, 20)};
   --app-neutral-1000: #{mat.get-theme-color($life-dark-theme, neutral, 10)};
-
   --app-neutral-variant-0: #{mat.get-theme-color(
       $life-dark-theme,
       neutral-variant,
@@ -427,8 +407,6 @@ html.dark {
       neutral-variant,
       10
     )};
-
-  // primary color
   --app-primary-0: #{mat.get-theme-color($life-dark-theme, primary, 100)};
   --app-primary-50: #{mat.get-theme-color($life-dark-theme, primary, 99)};
   --app-primary-100: #{mat.get-theme-color($life-dark-theme, primary, 98)};
@@ -444,7 +422,6 @@ html.dark {
   --app-primary-900: #{mat.get-theme-color($life-dark-theme, primary, 25)};
   --app-primary-950: #{mat.get-theme-color($life-dark-theme, primary, 20)};
   --app-primary-1000: #{mat.get-theme-color($life-dark-theme, primary, 10)};
-
   --app-secondary-0: #{mat.get-theme-color($life-dark-theme, secondary, 100)};
   --app-secondary-50: #{mat.get-theme-color($life-dark-theme, secondary, 99)};
   --app-secondary-100: #{mat.get-theme-color($life-dark-theme, secondary, 98)};
@@ -460,8 +437,6 @@ html.dark {
   --app-secondary-900: #{mat.get-theme-color($life-dark-theme, secondary, 25)};
   --app-secondary-950: #{mat.get-theme-color($life-dark-theme, secondary, 20)};
   --app-secondary-1000: #{mat.get-theme-color($life-dark-theme, secondary, 10)};
-
-  // tertiary color
   --app-tertiary-0: #{mat.get-theme-color($life-dark-theme, tertiary, 100)};
   --app-tertiary-50: #{mat.get-theme-color($life-dark-theme, tertiary, 99)};
   --app-tertiary-100: #{mat.get-theme-color($life-dark-theme, tertiary, 98)};
@@ -477,7 +452,6 @@ html.dark {
   --app-tertiary-900: #{mat.get-theme-color($life-dark-theme, tertiary, 25)};
   --app-tertiary-950: #{mat.get-theme-color($life-dark-theme, tertiary, 20)};
   --app-tertiary-1000: #{mat.get-theme-color($life-dark-theme, tertiary, 10)};
-
   --app-error-0: #{mat.get-theme-color($life-dark-theme, error, 100)};
   --app-error-50: #{mat.get-theme-color($life-dark-theme, error, 99)};
   --app-error-100: #{mat.get-theme-color($life-dark-theme, error, 98)};
@@ -493,7 +467,6 @@ html.dark {
   --app-error-900: #{mat.get-theme-color($life-dark-theme, error, 25)};
   --app-error-950: #{mat.get-theme-color($life-dark-theme, error, 20)};
   --app-error-1000: #{mat.get-theme-color($life-dark-theme, error, 10)};
-
   --app-primary: #{mat.get-theme-color($life-dark-theme, primary)};
   --app-on-primary: #{mat.get-theme-color($life-dark-theme, on-primary)};
   --app-primary-container: #{mat.get-theme-color(
@@ -516,7 +489,6 @@ html.dark {
       $life-dark-theme,
       on-primary-fixed-variant
     )};
-
   --app-secondary: #{mat.get-theme-color($life-dark-theme, secondary)};
   --app-on-secondary: #{mat.get-theme-color($life-dark-theme, on-secondary)};
   --app-secondary-container: #{mat.get-theme-color(
@@ -539,7 +511,6 @@ html.dark {
       $life-dark-theme,
       on-secondary-fixed-variant
     )};
-
   --app-tertiary: #{mat.get-theme-color($life-dark-theme, tertiary)};
   --app-on-tertiary: #{mat.get-theme-color($life-dark-theme, on-tertiary)};
   --app-tertiary-container: #{mat.get-theme-color(
@@ -562,7 +533,6 @@ html.dark {
       $life-dark-theme,
       on-tertiary-fixed-variant
     )};
-
   --app-error: #{mat.get-theme-color($life-dark-theme, error)};
   --app-on-error: #{mat.get-theme-color($life-dark-theme, on-error)};
   --app-error-container: #{mat.get-theme-color($life-dark-theme, error-container)};
@@ -570,7 +540,6 @@ html.dark {
       $life-dark-theme,
       on-error-container
     )};
-
   --app-surface: #{mat.get-theme-color($life-dark-theme, surface)};
   --app-surface-dim: #{mat.get-theme-color($life-dark-theme, surface-dim)};
   --app-surface-bright: #{mat.get-theme-color($life-dark-theme, surface-bright)};
@@ -599,23 +568,18 @@ html.dark {
       $life-light-theme,
       on-surface-variant
     )};
-
   --app-outline: #{mat.get-theme-color($life-dark-theme, outline)};
   --app-outline-variant: #{mat.get-theme-color($life-dark-theme, outline-variant)};
-
   --app-inverse-surface: #{mat.get-theme-color($life-dark-theme, inverse-surface)};
   --app-inverse-on-surface: #{mat.get-theme-color(
       $life-dark-theme,
       inverse-on-surface
     )};
   --app-inverse-primary: #{mat.get-theme-color($life-dark-theme, inverse-primary)};
-
   --app-scrim: #{mat.get-theme-color($life-dark-theme, scrim)};
   --app-shadow: #{mat.get-theme-color($life-dark-theme, shadow)};
-
   --mat-table-background-color: var(--app-background);
   --mat-table-row-item-outline-color: theme('colors.inverse');
   --mat-paginator-container-background-color: none;
-
-  --app-warn: theme('colors.red.500');
+  --app-warn: theme('colors.red.400');
 }
