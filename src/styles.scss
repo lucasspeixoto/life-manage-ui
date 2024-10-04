@@ -2,3 +2,8 @@
 @import './styles/fonts.scss';
 @import './styles/tailwindcss.scss';
 @import './styles/app-theme.scss';
+
+:root {
+  --app-pin-input-width: theme('width.14');
+  --app-pin-gap: theme('gap.4');
+}

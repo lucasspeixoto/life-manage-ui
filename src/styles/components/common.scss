@@ -1,0 +1,43 @@
+html {
+  @apply antialiased leading-tight min-h-screen;
+}
+
+body {
+  @apply min-h-screen font-sans;
+}
+
+.mdc-icon-button {
+  line-height: 0;
+}
+
+.logo {
+  background: theme('colors.primary.DEFAULT');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: inherit;
+  line-height: 0;
+}
+
+.mdc-notched-outline__notch {
+  border-right: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
+input.app-number-input-no-spinners::-webkit-outer-spin-button,
+input.app-number-input-no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'].app-number-input-no-spinners {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}

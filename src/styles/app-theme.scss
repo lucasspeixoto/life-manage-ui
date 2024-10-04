@@ -7,8 +7,8 @@ $life-light-theme: mat.define-theme(
   (
     color: (
       theme-type: light,
-      primary: mat.$azure-palette,
-      tertiary: mat.$blue-palette,
+      primary: mat.$cyan-palette,
+      tertiary: mat.$orange-palette,
     ),
   )
 );
@@ -17,8 +17,8 @@ $life-dark-theme: mat.define-theme(
   (
     color: (
       theme-type: dark,
-      primary: mat.$cyan-palette,
-      tertiary: mat.$orange-palette,
+      primary: mat.$blue-palette,
+      tertiary: mat.$azure-palette,
     ),
   )
 );
@@ -607,3 +607,6 @@ html.dark {
   --mat-paginator-container-background-color: none;
   --app-warn: theme('colors.red.400');
 }
+
+@import './components/common.scss';
+

@@ -12,11 +12,13 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-empty-function": "warn",
         "@angular-eslint/directive-selector": [
           "error",
           {
             "type": "attribute",
-            "prefix": ["app", "fac"],
+            "prefix": ["app"],
             "style": "camelCase"
           }
         ],
@@ -24,7 +26,7 @@
           "error",
           {
             "type": "element",
-            "prefix": ["app", "fac"],
+            "prefix": ["app"],
             "style": "kebab-case"
           }
         ],

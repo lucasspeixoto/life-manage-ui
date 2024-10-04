@@ -4,6 +4,7 @@
   "compileOnSave": false,
   "typeRoots": ["node_modules/@angular/material"],
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
